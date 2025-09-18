@@ -6,7 +6,12 @@ export const BrandLogoLeft = () => {
 
   if (!logos) {
     return (
-      <h1 className="text-xl font-bold text-black ml-2">OnlineStore</h1>
+      <div className="flex items-center space-x-2 ml-2">
+        <div className="w-8 h-8 bg-gradient-to-br from-gold to-amber-600 rounded-lg flex items-center justify-center">
+          <span className="text-white font-bold text-lg">S</span>
+        </div>
+        <h1 className="text-xl font-bold text-foreground">SoleStyle</h1>
+      </div>
     )
   }
 
@@ -14,7 +19,12 @@ export const BrandLogoLeft = () => {
 
   if (!mainLogoUrl) {
     return (
-      <h1 className="text-xl font-bold text-black ml-2">OnlineStore</h1>
+      <div className="flex items-center space-x-2 ml-2">
+        <div className="w-8 h-8 bg-gradient-to-br from-gold to-amber-600 rounded-lg flex items-center justify-center">
+          <span className="text-white font-bold text-lg">S</span>
+        </div>
+        <h1 className="text-xl font-bold text-foreground">SoleStyle</h1>
+      </div>
     )
   }
 
@@ -22,7 +32,7 @@ export const BrandLogoLeft = () => {
     <a href="/" aria-label="Home" className="ml-2">
       <img 
         src={mainLogoUrl} 
-        alt="Main logo"
+        alt="SoleStyle logo"
         className="h-8 w-auto object-contain" 
       />
     </a>
